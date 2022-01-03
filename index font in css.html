@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+        
+         @font-face {
+            font-family: 'Minha Fonte';
+            src: url('littlebird.ttf');
+        }
+            
+        body {
+            font-size: 1.25em; 
+        } <!--Não confundir > weight width height-->
+
+        h2 {
+            font-weight: normal  ; /* serve para tirar o negrito dos títulos opções: 
+            normal, lighter, bold, bolder ou valores entre 100 e 900  */
+            
+            /* "text-decorations:underline;" para sublinhado */
+
+            /* NO LUGAR DE: 
+            font-family:'work sans', sans-serif; (font)
+            font-weight: bolder;    (borda)
+            font-size: 3em;        (tamanho)
+            font-style: italic;     (itálico)
+            PODEMOS USAR shorthand font OBEDECENDO A SEGUINTE ORDEM:            
+            
+            (itálico)      (bolder)           (3em)         ('work sans', sans-serif;)
+            font-style -> font-weight ->    font-size ->          font-family  
+            resultando em : 
+            font: italic bolder 3em 'work sans',sans-serif;  
+            */
+
+        }
+
+        h2#padrão {
+            font-family: Arial, Helvetica, sans-serif; /* O navegador vai tentar carregar a primeira, se não funcionar, passa pra próxima */
+        }
+
+        h2#google {
+            font-family: 'Pacifico', cursive; /* A importação dessa fonte aconteceu na linha 8 */
+        }
+
+        h2#local {
+            font-family: 'Minha Fonte', sans-serif; /* Fonte local importada da linha 9 até 12 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <h2 id="padrao">Podemos configurar fontes padrão do sistema</h2>
+    <h2 id="google">Ou então usar uma fonte do Google Fonts</h2>
+    <h2 id="local">Ou ainda usar um arquivo local de fontes</h2>
+    <hr>
+    <hr>
+    <h3>  <strong>Medida absolutas</strong> <br>
+        cm, mm, in, px, pt. pc <br>
+      
+        <strong>Medidas relativas</strong>
+         <br>
+        em, ex, rem, vw, vh, % <br>
+      
+        16px geralmente é igual a 1em <br>
+        1em geralmente é = a 12pt (segundo meus testes)<br>
+        logo 1.25em = 15pt <br>
+      
+        preferir o "em" Exemplo font-size 1.5em; <br>
+        <hr>
+        </h3>
+        <p>EM é uma unidade de medida tipográfica. Seu nome está relacionada com a letra “M”, onde o tamanho base dessa unidade deriva da largura da letra M em maiúscula. Dizem que 1em equivale aproximadamente 16 pontos.</p>  
+
+        <img src="imagens/Captura de Tela 2021-12-31 às 21.59.40.png" alt="">
+        <h3>Não confundir: (weight = peso) - (width = largura) - (height = altura)</h3>
+        <p>Importando fonte externa do Google font</p>
+        <img src="imagens/Captura de Tela 2021-12-31 às 22.04.06.png" alt="">
+        <h3>Importando fonte externa do Google font</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FLuQonci9wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+       <p>baixando fontes e inserindo</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <p> Fontes Externas "love larry" baixadas</p> 
+       <img src="imagens/Captura de Tela 2021-12-31 às 22.19.44.png" alt="">
+       <img src="imagens/Captura de Tela 2021-12-31 às 22.27.01.png" alt="">
+        
+    
+     <p><a href="index.html">Home</a></p>
+    
+</body>
+
+</html>
