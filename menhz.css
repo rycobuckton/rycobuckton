@@ -30,7 +30,7 @@
    display: inline-block; /*menu alinhamento*/
    margin-right: 20px;  /*largura menu*/
    padding: 10px;/*altura menu*/
-   transition:background.9s;
+   transition: background.9s;
 }
 
 .dp-menu ul li a:hover {
@@ -77,8 +77,7 @@ body {
  p {
    text-align: justify;
    text-indent: 30px;     
-   }
-#corp {
+   }    
+.corp {
    text-align: right;
-}     
-     
+}   
