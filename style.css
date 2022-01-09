@@ -3,19 +3,27 @@
 body {
     background-color: rgba(150, 228, 160, 0.788);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 20px; 
+    width: 100%;
 }
+img {
+    max-width: 90%;
+    align-content: center;
+ }
 
 h1 {
     color:rgb(116, 65, 17);
     background-color: rgba(36, 226, 19, 0.178);
-    
+    width: 100%;
 }
 
 h2 {
     color: rgb(218, 129, 14);
+    width: 100%;
 }
 
 p {
     text-align: justify;
+    width: 80%;
+    
 }
