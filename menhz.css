@@ -28,8 +28,8 @@
    color: var(--cor-primaria);
    text-decoration: none;
    display: inline-block; /*menu alinhamento*/
-   margin-right: 20px;  /*largura menu*/
-   padding: 10px;/*altura menu*/
+   margin-right: 1%;  /*largura menu*/
+   padding: 2%;/*altura menu*/
    transition: background.9s;
 }
 
@@ -65,8 +65,8 @@ body {
       border-radius: 10px;
       box-shadow: 10px 10px 15px rgba(14, 29, 97, 0.767);
       width: auto;
-      padding: 20px;
-      margin: 30px; }
+      padding: 2%;
+      margin: 2%; }
       h1 {color:#302b3f;
          text-align: center;
          text-shadow: 1px 1px 2px rgb(255, 252, 252);
