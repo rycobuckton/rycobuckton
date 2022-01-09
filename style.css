@@ -14,16 +14,16 @@ img {
 h1 {
     color:rgb(116, 65, 17);
     background-color: rgba(36, 226, 19, 0.178);
-    width: 100%;
+  
 }
 
 h2 {
     color: rgb(218, 129, 14);
-    width: 100%;
+    
 }
 
 p {
     text-align: justify;
-    width: 80%;
+    width: 90%;
     
 }
