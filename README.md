@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @rycobuckton
 - 👀 I’m interested in  estudo
-- 🌱 I’m currently learning CSS e JP.
+- 🌱 I’m currently learning PHP e JS.
 - 💞️ I’m looking to collaborate on ...
 - ainda  aprendendo por aqui...
-- 📫 How to reach me rycobuckton@gmail.com
+- 📫 How to reach me rycobuckton@gmail.com  Zap 21992245357.
 
 <!---
 rycobuckton/rycobuckton is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
