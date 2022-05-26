@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root { /*cores do menu*/
-   --cor-fundo: rgba(21, 39, 117, 0.658);
-   --cor-hover: rgba(202, 137, 17, 0.863);
+   --cor-fundo: rgba(6, 20, 75, 0.856);
+   --cor-hover: rgba(6, 64, 255, 0.863);
    --cor-primaria: rgb(231, 241, 236);
    
 }
@@ -16,7 +16,7 @@
 
 .dp-menu ul { /*cores do menu*/
    background-color: var(--cor-fundo);
-   border-radius: 0px;
+   border-radius: 10px;
 }
 
 .dp-menu ul li { /* alinhamento do menu */
@@ -30,11 +30,12 @@
    display: inline-block; /*menu alinhamento*/
    margin-right: 1%;  /*largura menu*/
    padding: 2%;/*altura menu*/
-   transition: background.9s;
+   transition: background.5s;
 }
 
 .dp-menu ul li a:hover {
    background-color: var(--cor-hover);
+   border-radius: 10px;
 }
 
 /*sub menu*/
