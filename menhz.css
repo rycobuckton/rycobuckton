@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root { /*cores do menu*/
-   --cor-fundo: #000000bd;rgba(87, 115, 177, 0.938);
+   --cor-fundo: #010611bd;rgba(87, 115, 177, 0.938);
    --cor-hover: #0068ad;rgba(0, 25, 109, 0.911);
    --cor-primaria: rgb(231, 241, 236);
    
@@ -28,7 +28,7 @@
    color: var(--cor-primaria);
    text-decoration: none;
    display: inline-block; /*menu alinhamento*/
-   margin-right: 0,5%;  /*largura menu*/
+   margin-right: 1,%;  /*largura menu*/
    padding: 1.5%;/*altura menu*/
    transition: background.5s;
 }
