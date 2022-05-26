@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root { /*cores do menu*/
-   --cor-fundo: rgba(87, 116, 177, 0.966);
-   --cor-hover: #364c8d;rgba(0, 25, 109, 0.911);
+   --cor-fundo: #1529639d;rgba(87, 115, 177, 0.938);
+   --cor-hover: #33467e;rgba(0, 25, 109, 0.911);
    --cor-primaria: rgb(231, 241, 236);
    
 }
