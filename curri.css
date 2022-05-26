@@ -4,10 +4,10 @@
 }
 
 body {
-    background-image: repeating-linear-gradient(90deg, #8490b6, #e1e5ec, #898fd3);}
+    background-image: linear-gradient(to left,#6E7DAB, #6a72ca, #7d96ac, #6E7DAB, #5792d5, #6394ac);}
 
 main {
-    background-color: hsla(201, 44%, 81%, 0.74);
+    background-color: hsla(201, 44%, 81%, 0.753);
     border-radius: 5px;
     box-shadow: 10px 10px 15px rgba(14, 29, 97, 0.767);
     width: 680px;
