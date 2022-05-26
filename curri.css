@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(to left, #6E7DAB, #5762d5, #d1e3dd);}
+    background-image: repeating-linear-gradient(to left, #6E7DAB, #5762d5, #d1e3dd);}
 
 main {
     background-color: hsla(201, 44%, 81%, 0.74);
