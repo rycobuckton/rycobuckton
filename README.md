@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @rycobuckton
 - 👀 I’m interested in  estudo
 - 🌱 I’m currently learning PHP e JS.
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on ....
 - ainda  aprendendo por aqui...
-- 📫 How to reach me rycobuckton@gmail.com  Zap 21992245357.
+- 📫 How to reach me rycobuckton@gmail.com  Zap 21986995549
 - Abaixo: Minhas anotações e link dos meus estudos em html e CSS.
 -  https://rycobuckton.github.io/rycobuckton/index.html#
 <!---
