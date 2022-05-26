@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning PHP e JS.
 - 💞️ I’m looking to collaborate on ...
 - ainda  aprendendo por aqui...
-- 📫 How to reach me rycobuckton@gmail.com  Zap 21992245357.
+- 📫 How to reach me rycobuckton@gmail.com  Zap 21996995549.
 - Abaixo: Minhas anotações e link dos meus estudos em html e CSS.
 -  https://rycobuckton.github.io/rycobuckton/index.html#
 <!---
