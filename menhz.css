@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root { /*cores do menu*/
-   --cor-fundo: rgba(6, 20, 75, 0.856);
-   --cor-hover: rgba(6, 64, 255, 0.863);
+   --cor-fundo: rgba(87, 116, 177, 0.966);
+   --cor-hover: #364c8d;rgba(0, 25, 109, 0.911);
    --cor-primaria: rgb(231, 241, 236);
    
 }
@@ -28,8 +28,8 @@
    color: var(--cor-primaria);
    text-decoration: none;
    display: inline-block; /*menu alinhamento*/
-   margin-right: 1%;  /*largura menu*/
-   padding: 2%;/*altura menu*/
+   margin-right: 0,5%;  /*largura menu*/
+   padding: 1.5%;/*altura menu*/
    transition: background.5s;
 }
 
