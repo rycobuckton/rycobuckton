@@ -27,7 +27,7 @@
                         <li><a href="formularios.html" class="my-link">Formulário teste</a></li>
                         <li><a href="pseudoclasses.html" class="my-link">Pseudo class</a></li>
                         <li><a href="tabela.html" class="my-link">Tabela</a></li>
-                        <li><a href="hover.html" class="my-link">Exemplo de hover</a></li>
+                        <li><a href="TocaSample.html" class="my-link">Pagina Inicial</a></li>
                         
     
                     </ul>
@@ -74,8 +74,38 @@
     
             </ul>
         </nav>
-    
-    <div id="txt">
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuItems = document.querySelectorAll('.dp-menu > ul > li > a');
+
+        menuItems.forEach(function(item) {
+            item.addEventListener('click', toggleSubmenu);
+            item.addEventListener('touchstart', toggleSubmenu);
+        });
+
+        function toggleSubmenu(event) {
+            var submenu = this.nextElementSibling;
+            if (submenu && submenu.tagName === 'UL') {
+                event.preventDefault(); // Impede o comportamento padrão do link apenas se houver um submenu
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+
+        // Adiciona um evento de clique aos links do submenu para garantir que eles funcionem
+        var submenuLinks = document.querySelectorAll('.dp-menu ul ul li a');
+        submenuLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.stopPropagation(); // Impede que o clique no link feche o submenu
+            });
+            link.addEventListener('touchstart', function(event) {
+                event.stopPropagation(); // Impede que o toque no link feche o submenu
+            });
+        });
+    });
+    </script>
+</body>
+            </script>
+        <div id="txt">
         <h1>TOCA SAMPLE</h1>
         <img src="imagens/FT1.png" alt="imagem de comandos">
         <h2>Um novo conceito para Samples</h2>
@@ -86,6 +116,7 @@
         <p class="espaco-reduzido">O processo é simples para que já lida com Kontakt mas pode ser um pouco complicado para iniciantes, porem irei descrever aqui em detalhes como fazê-lo.</p>
         <li><a href="Caracterisricas.html" class="my-link">Características e controles</a></li>
     </div>
+
 </body>
 
 </html>        
