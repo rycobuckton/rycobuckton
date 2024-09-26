@@ -35,6 +35,9 @@ body {
    width: 100%;
 }
 
+.dp-menu ul ul li.empty-item {
+   height: 30px; /* Ajuste a altura conforme necessário */
+}
 .dp-menu ul {
    display: flex;
    flex-wrap: nowrap; /* Permite que os itens do menu quebrem para a próxima linha se necessário */
