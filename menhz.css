@@ -37,7 +37,7 @@ body {
 
 .dp-menu ul {
    display: flex;
-   flex-wrap: wrap; /* Permite que os itens do menu quebrem para a próxima linha se necessário */
+   flex-wrap: nowrap; /* Permite que os itens do menu quebrem para a próxima linha se necessário */
    background-color: var(--cor-fundo);
    border-radius: 7px;
    list-style-type: none;
@@ -78,6 +78,7 @@ body {
    display: none;
    left: 0; /* Alinhando o submenu */
    position: absolute;
+
 }
 
 .dp-menu ul li:hover ul {
@@ -160,17 +161,31 @@ p {
 }
 @media (max-width: 600px) {
    .dp-menu ul {
-       flex-direction: column; /* Alinha os itens do menu verticalmente em telas menores */
+      flex-wrap: nowrap; /* Garante que os itens não quebrem para a próxima linha */
        height: auto; /* Permite que a altura do menu se ajuste ao conteúdo */
    }
 
    .dp-menu ul li {
-       flex: 1 1 auto; /* Permite que os itens cresçam e encolham conforme necessário */
-       padding: 5px; /* Reduz o preenchimento para itens menores */
+      flex: 1 1 auto; /* Permite que os itens cresçam e encolham conforme necessário */
+      min-width: auto; /* Remove a largura mínima */
    }
 
    .dp-menu ul li a {
-       font-size: 14px; /* Reduz o tamanho do texto para telas menores */
-       padding: 8px; /* Ajusta o preenchimento interno */
+       font-size: 12px; /* Reduz o tamanho do texto para telas menores */
+       padding: 4px; /* Ajusta o preenchimento interno */
    }
+   .dp-menu ul ul {
+      position:  absolute; /* Posiciona os submenus de forma estática em telas menores */
+      width: 200%; /* Garante que o submenu ocupe 100% da largura do item pai */
+  }
+
+
+
+  .dp-menu ul ul li a {
+      width: 100%; /* Garante que o fundo cubra toda a largura do texto */
+      padding: 8px; /* Ajusta o preenchimento conforme necessário */
+  }
+
+
+
 }
