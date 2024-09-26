@@ -1,38 +1,71 @@
 @charset "UTF-8";
 
-:root { /*cores do menu*/
-   --cor-fundo: #010611bd;rgba(87, 115, 177, 0.938);
+:root {
+   --cor-fundo: #010611d6;rgba(87, 115, 177, 0.938);
    --cor-hover: #0068ad;rgba(0, 25, 109, 0.911);
    --cor-primaria: rgb(231, 241, 236);
 }
 
-* { 
+* {
    font-family: Arial, Helvetica, sans-serif;
-   /* height 100% */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.dp-menu ul {/* formatação do menu*/
-   list-style-type: none; 
-   padding: 0; 
+html, body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
 }
 
-.dp-menu ul { /*cores do menu*/
+body {
+   padding: 30px 0 0 0;
+   background-image: linear-gradient(to left, #6E7DAB, #5762d5, #d1d9e3);
+   display: block;
+}
+
+.dp-menu {
+   position: fixed;
+   top: 0;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.dp-menu ul {
+   display: flex;
+   flex-wrap: wrap; /* Permite que os itens do menu quebrem para a próxima linha se necessário */
    background-color: var(--cor-fundo);
-   border-radius: 10px;
+   border-radius: 7px;
+   list-style-type: none;
+   padding: 1%;
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   justify-content: space-around;
 }
 
-.dp-menu ul li { /* alinhamento do menu */
-   display: inline; /*menu alinhamento*/
-   position: relative; /*menu alinhamento*/
+.dp-menu ul li {
+   flex: 1 1 auto; /* Permite que os itens cresçam e encolham conforme necessário */
+   display: flex;
+   position: relative;
+   min-width: 200px; /* Ajuste este valor conforme necessário */
 }
 
-.dp-menu ul li a { 
+.dp-menu ul li a {
    color: var(--cor-primaria);
    text-decoration: none;
-   display: inline-block; /*menu alinhamento*/
-   margin-right: 1%;  /*largura menu*/
-   padding: 1.5%;/*altura menu*/
-   transition: background 0.5s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px /* Ajuste o padding conforme necessário */
+   transition: background 1.5s;
+   white-space: nowrap;
+   width: 200%; /* Garante que o fundo acompanhe o texto */
 }
 
 .dp-menu ul li a:hover {
@@ -40,49 +73,42 @@
    border-radius: 10px;
 }
 
-/*sub menu*/
+/* Submenu */
 .dp-menu ul ul {
    display: none;
-   left: 0; /*alinhando menu*/
-   position: absolute;   
+   left: 0; /* Alinhando o submenu */
+   position: absolute;
 }
 
 .dp-menu ul li:hover ul {
    display: block;
 }
 
-.dp-menu ul ul {   
-   width: 250px;
-}
-
 .dp-menu ul ul li a {
    display: block;
-}
-
-body {
-   background-image: linear-gradient(to left, #6E7DAB, #5762d5, #d1d9e3);
 }
 
 #txt {
    background-color: hsla(201, 44%, 81%, 0.74);
    border-radius: 10px;
    box-shadow: 10px 10px 15px rgba(14, 29, 97, 0.767);
-   width: 80%; /* Ajuste a largura conforme necessário */
-   max-width: 800px; /* Limite máximo de largura */
+   width: 100%;
+   max-width: 1400px;
    padding: 2%;
-   margin: 2% auto; /* Centraliza horizontalmente */
+   margin: 2% auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
+   padding-top: 10px;
 }
 
 #txt img {
-   max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
-   height: auto; /* Mantém a proporção da imagem */
-   margin-top: 10px; /* Adiciona espaço acima da imagem */
-   margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+   max-width: 100%;
+   height: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 
@@ -131,4 +157,20 @@ p {
 
 .corp {
    text-align: right;
+}
+@media (max-width: 600px) {
+   .dp-menu ul {
+       flex-direction: column; /* Alinha os itens do menu verticalmente em telas menores */
+       height: auto; /* Permite que a altura do menu se ajuste ao conteúdo */
+   }
+
+   .dp-menu ul li {
+       flex: 1 1 auto; /* Permite que os itens cresçam e encolham conforme necessário */
+       padding: 5px; /* Reduz o preenchimento para itens menores */
+   }
+
+   .dp-menu ul li a {
+       font-size: 14px; /* Reduz o tamanho do texto para telas menores */
+       padding: 8px; /* Ajusta o preenchimento interno */
+   }
 }
