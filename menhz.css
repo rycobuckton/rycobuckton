@@ -105,7 +105,7 @@ h2 {
    display: inline; /* Garante que a imagem se comporte como parte do texto */
    vertical-align: middle; /* Alinha a imagem verticalmente ao meio do texto */
    width: auto; /* Mantém a proporção da imagem */
-   height: 1.2em; /* Ajusta a altura da imagem para ser um pouco maior que o texto */
+   height: 1.0em; /* Ajusta a altura da imagem para ser um pouco maior que o texto */
    margin-left: 3px; /* Espaço entre a imagem e o texto */
 }
 p {
