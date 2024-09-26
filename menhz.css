@@ -2,7 +2,7 @@
 
 :root {
    --cor-fundo: #010611d6;rgba(87, 115, 177, 0.938);
-   --cor-hover: #0068ad;rgba(0, 25, 109, 0.911);
+   --cor-hover: #72a8f4c9;rgba(0, 25, 109, 0.911);
    --cor-primaria: rgb(231, 241, 236);
 }
 
@@ -35,8 +35,13 @@ body {
    width: 100%;
 }
 
-.dp-menu ul ul li.empty-item {
-   height: 30px; /* Ajuste a altura conforme necessário */
+.dp-menu ul ul li.empty-item {/* Define a altura do item vazio para criar espaço */
+   height: 35px; /* Ajuste a altura conforme necessário */
+}
+/* Remove o efeito de hover do item vazio */
+.dp-menu ul ul li.empty-item a:hover {
+   background-color: transparent; /* Torna o fundo transparente */
+   color: inherit; /* Mantém a cor do texto original */
 }
 .dp-menu ul {
    display: flex;
@@ -162,10 +167,11 @@ p {
 .corp {
    text-align: right;
 }
+/* Estilos responsivos */
 @media (max-width: 600px) {
    .dp-menu ul {
       flex-wrap: nowrap; /* Garante que os itens não quebrem para a próxima linha */
-       height: auto; /* Permite que a altura do menu se ajuste ao conteúdo */
+      height: auto; /* Permite que a altura do menu se ajuste ao conteúdo */
    }
 
    .dp-menu ul li {
@@ -177,17 +183,41 @@ p {
        font-size: 12px; /* Reduz o tamanho do texto para telas menores */
        padding: 4px; /* Ajusta o preenchimento interno */
    }
+
    .dp-menu ul ul {
-      position:  absolute; /* Posiciona os submenus de forma estática em telas menores */
+      position: absolute; /* Posiciona os submenus de forma estática em telas menores */
       width: 200%; /* Garante que o submenu ocupe 100% da largura do item pai */
-  }
+   }
 
-
-
-  .dp-menu ul ul li a {
+   .dp-menu ul ul li a {
       width: 100%; /* Garante que o fundo cubra toda a largura do texto */
       padding: 8px; /* Ajusta o preenchimento conforme necessário */
-  }
+   }
+}
 
+@media (min-width: 601px) and (max-width: 1024px) {
+   .dp-menu ul {
+      flex-wrap: nowrap; /* Garante que os itens não quebrem para a próxima linha */
+      height: auto; /* Permite que a altura do menu se ajuste ao conteúdo */
+   }
 
+   .dp-menu ul li {
+      flex: 1 1 auto; /* Permite que os itens cresçam e encolham conforme necessário */
+      min-width: auto; /* Remove a largura mínima */
+   }
+
+   .dp-menu ul li a {
+       font-size: 14px; /* Ajusta o tamanho do texto para telas médias */
+       padding: 6px; /* Ajusta o preenchimento interno */
+   }
+
+   .dp-menu ul ul {
+      position: absolute; /* Posiciona os submenus de forma estática em telas médias */
+      width: 100%; /* Garante que o submenu ocupe 100% da largura do item pai */
+   }
+
+   .dp-menu ul ul li a {
+      width: 100%; /* Garante que o fundo cubra toda a largura do texto */
+      padding: 8px; /* Ajusta o preenchimento conforme necessário */
+   }
 }
