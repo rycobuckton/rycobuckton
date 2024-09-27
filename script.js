@@ -25,4 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
             event.stopPropagation(); // Impede que o toque no link feche o submenu
         });
     });
+
+    // Fecha todos os submenus quando clica fora deles
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.dp-menu')) {
+            closeAllSubmenus();
+        }
+    });
+
+    // Fecha todos os submenus quando a tecla "Esc" é pressionada
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeAllSubmenus();
+        }
+    });
+
+    function closeAllSubmenus() {
+        var submenus = document.querySelectorAll('.dp-menu ul ul');
+        submenus.forEach(function(submenu) {
+            submenu.style.display = 'none';
+        });
+    }
 });
+
