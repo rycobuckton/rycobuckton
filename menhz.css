@@ -227,3 +227,9 @@ p {
       padding: 8px; /* Ajusta o preenchimento conforme necessário */
    }
 }
+ul {
+   padding-left: 20px; /* Ajuste o valor conforme necessário */
+}
+li {
+   text-align: left;
+}
