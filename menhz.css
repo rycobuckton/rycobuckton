@@ -160,10 +160,16 @@ p {
    font-weight: bold;
    color: rgb(73, 114, 249); /* Cor abóbora */
    background-color: black; /* Fundo preto */
-   padding: 2px 5px; /* Adiciona um pouco de espaço ao redor do texto */
-   border-radius: 3px; /* Opcional: arredonda os cantos */
+   padding: 1px 1px; /* Adiciona um pouco de espaço ao redor do texto */
+   border-radius: 1px; /* Opcional: arredonda os cantos */
 }
-
+.destaqueoff {
+   font-weight: bold;
+   color: rgb(95, 95, 96); /* Cor abóbora */
+   background-color: black; /* Fundo preto */
+   padding: 1px 1px; /* Adiciona um pouco de espaço ao redor do texto */
+   border-radius: 1px; /* Opcional: arredonda os cantos */
+}
 .corp {
    text-align: right;
 }
