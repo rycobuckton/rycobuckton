@@ -109,15 +109,14 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   text-align: center;
    padding-top: 10px;
 }
 
 #txt img {
    max-width: 100%;
    height: auto;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 15px;
+   margin-bottom: 15px;
 }
 
 
@@ -131,17 +130,24 @@ h2 {
    color: #364c8d;
 }
 
+
 .espaco-reduzido {
+   margin: 0;
    margin-bottom: 5px; /* Ajuste o valor conforme necessário */
-   display:inline;
-   align-items: center; /* Alinha verticalmente ao centro */
+   display: inline; /* Garante que o parágrafo se comporte como parte do texto */
+   text-align: left; /* Alinha o texto à esquerda */
+   line-height: 1.5; /* Ajusta a altura da linha para garantir que a imagem e o texto estejam alinhados*/ 
 }
+
 .espaco-reduzido img {
    display: inline; /* Garante que a imagem se comporte como parte do texto */
    vertical-align: middle; /* Alinha a imagem verticalmente ao meio do texto */
    width: auto; /* Mantém a proporção da imagem */
    height: 1.0em; /* Ajusta a altura da imagem para ser um pouco maior que o texto */
    margin-left: 3px; /* Espaço entre a imagem e o texto */
+   margin-top: 0; /* Remove qualquer margem superior */
+   margin-bottom: 0; /* Remove qualquer margem inferior */
+   
 }
 p {
    text-align: justify;
