@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-   padding: 30px 0 0 0;
+   padding: 70px 0 0 0;
    background-image: linear-gradient(to left, #6E7DAB, #5762d5, #d1d9e3);
    display: block;
 }
@@ -70,7 +70,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 10px /* Ajuste o padding conforme necessário */
+   padding: 10px; /* Ajuste o padding conforme necessário */
    transition: background 1.5s;
    white-space: nowrap;
    width: 200%; /* Garante que o fundo acompanhe o texto */
@@ -238,4 +238,29 @@ ul {
 }
 li {
    text-align: left;
+}
+ 
+/* Estilo padrão para os links */
+.my-link2 {
+   font-size: 20px;
+   font-weight: bold;
+   color: #0033ff; /* Cor do link não visitado */
+   text-decoration: underline; /* Mantém o sublinhado do link */
+   cursor: pointer; /* Cursor vira mãozinha */
+}
+
+/* Estilo para link visitado */
+.my-link2:visited {
+   color: #5a0199; /* Cor do link visitado */
+}
+
+/* Estilo para o link quando passa o mouse */
+.my-link2:hover {
+   color: #02028e; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo para alinhar à direita */
+.align-right {
+   text-align: right; /* Alinha o texto à direita */
+   display: block; /* Transforma o link em um bloco para ser alinhado */
 }
