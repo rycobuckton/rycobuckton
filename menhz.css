@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-:root {
-   --cor-fundo: #010611d6;rgba(87, 115, 177, 0.938);
-   --cor-hover: #72a8f4c9;rgba(0, 25, 109, 0.911);
-   --cor-primaria: rgb(231, 241, 236);
+:root { --cor-fundo: rgba(87, 115, 177, 0.938);
+   --cor-hover: rgba(0, 25, 109, 0.911); 
+   --cor-primaria: rgb(231, 241, 236); 
 }
-
 * {
    font-family: Arial, Helvetica, sans-serif;
    margin: 0;
