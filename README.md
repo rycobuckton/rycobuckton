@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @rycobuckton
 - 👀 I’m interested in  estudo
-- 🌱 I’m currently learning PHP e JS.
+- 🌱 I’m currently learning c# e KSP Kontak.
 - 💞️ I’m looking to collaborate on ....
 - ainda  aprendendo por aqui...
 - 📫 How to reach me rycobuckton@gmail.com  Zap 21986995549
