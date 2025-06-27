@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.S.Index</title>
+    <link rel="shortcut icon" href="Paomedia-Small-N-Flat-Star.ico" type="image/x-icon">
+    <link rel="stylesheet" href="menhz.css">
+</head>
+
+<body>
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="#">Manual</a>
+                <ul>
+                    <li class="empty-item"><a href="#">&nbsp;</a></li>
+                    <li><a href="Caracterisricas.html" class="my-link">Características e controles</a></li>
+                    <li><a href="Export.html" class="my-link">Exportando Samples</a></li>
+                    <li><a href="Importando.html" class="my-link">Importando Samples</a></li>
+                    <li><a href="ReinstalandoMD.html" class="my-link">Reinstalando Moduladores</a></li>
+                    <li><a href="Dicas.html" class="my-link">Dicas Importantes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sobre Autor</a>
+                <ul>
+                    <li class="empty-item"><a href="#">&nbsp;</a></li>
+                    <li><a href="Sobre_Autor.html" class="my-link">Um Pouco Sobre o Autor</a></li>
+                    <li><a href="mailto:rycobuckton@gmail.com">rycobuckton@gmail.com (Meu Pix)</a></li>
+                    <li><a href="#">21 986995549 &#8678; Só Zap <img src="midia/favicon.png" alt=""></a></li>
+                    <li><a href="Curriculum.html" class="my-link">Meu curriculum</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Úteis</a>
+                <ul>
+                    <li class="empty-item"><a href="#">&nbsp;</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=XPCCWRB82ew&t=246s" class="my-link" target="_blank" rel="external">Video Group Editor Kontakt (Inglês)</a></li>
+                    <li><a href="https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_7_6_Manual_en.pdf" class="my-link" target="_blank" rel="external">Manual Kontakt 7 (Inglês)</a></li>
+                    <li><a href="https://saudadesdoriodoluizd.blogspot.com/2021/04/restaurante-castelo-da-lagoa-chicos-bar.html" class="my-link" target="_blank" rel="external">Chico's Bar da Lagoa</a></li>
+                    <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" class="my-link" target="_blank" rel="external">Ericasarti♜ ‹¾›</a></li>
+                    <li><a href="https://color.adobe.com/pt/create/color-wheel" class="my-link" target="_blank" rel="external">Adobe Paleta Cores.</a></li>
+                    <li><a href="https://coolors.co/" class="my-link" target="_blank" rel="external">Coolor.co paleta Cores.</a></li>
+                    <li><a href="https://www.w3schools.com/html/default.asp" class="my-link" target="_blank" rel="external">W3SCHOOLS.</a></li>
+                    <li><a href="https://www.lipsum.com/" class="my-link" target="_blank" rel="external">Lorem Ipsum</a></li>
+                    <li><a href="https://emojipedia.org/people/" class="my-link" target="_blank" rel="external">Emojipedia &#x1F648;</a></li>
+                    <li><a href="https://iconarchive.com/" class="my-link" target="_blank" rel="external">IconArchive</a></li>
+                    <li><a href="https://www.iana.org/assignments/media-types/media-types.xml" class="my-link" target="_blank" rel="external">Iana Media Types.</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+
+    <div id="txt">
+        <h1>Visual VisualStudio</h1>
+        <img src="imagens/Vs.png" alt="imagem de comandos">
+        <h2>Por lazer, criei um interpretador de acordes MIDI e visualizador de imagens, formato em que salvo minhas músicas cifradas!</h2>
+        <p class="espaco-reduzido">
+            Desenvolvi uma versão legada para Windows usando Windows Forms, mas como o sistema executa muitos processos junto com o Kontakt, resolvi criar também para macOS com Avalonia. O resultado ficou tão bom que refiz a versão para Windows, desta vez usando WPF (imagem acima).
+        </p>
+        <p class="espaco-reduzido">
+            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando em Hold Notes, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
+        </p>
+        <p class="espaco-reduzido">
+            Em destaque, a cifra é interpretada conforme tocamos no teclado via MIDI. O VisualStudio reconhece mais de 3.500 acordes, inclusive invertidos, também exibindo abaixo a composição de cada acorde, de acordo com as notas tocadas.
+        </p>
+        <p class="espaco-reduzido">
+            À direita, aparece um possível candidato a acorde, ou uma segunda interpretação do programa. Pode ser o mesmo acorde com nome diferente ou algo próximo, mas nem sempre correto — o que vale é o primeiro. Por exemplo, pode mostrar Am7/C e ao lado C6, pois as notas são praticamente as mesmas.
+        </p>
+        <p class="espaco-reduzido">
+            Você pode abrir uma imagem e clicar em "Acorde Sobre". O acorde (apenas ele) ficará do tamanho, cor e transparência que você definir, sobre a imagem, como mostrado abaixo.
+        </p>
+        <img src="imagens/Vs2.png" alt="imagem de comandos">
+        <p class="espaco-reduzido">
+            Note que já alterei a cor de fundo e do acorde. Os controles somem após alguns segundos sem movimentar o mouse, deixando a tela exclusiva para a imagem e o acorde. Basta mover o mouse para que os controles reapareçam.
+        </p>
+        <p class="espaco-reduzido">
+            Com um arquivo de imagens carregado, basta pressionar as setas do teclado para navegar entre as imagens. À direita de "Chord A-" está o título da música (arquivo aberto). Clicando na seta ao lado, você pode selecionar outras músicas (imagens do diretório).
+        </p>
+        <p class="espaco-reduzido">
+            A imagem abaixo mostra meu dispositivo MIDI em MID IN (meu teclado CASSIO USB-MIDI), previamente selecionado para receber os acordes via cabo MIDI. Logo abaixo, em MID OUT, está "VisualMusic MIDI Hub", a porta que o VisualStudio utiliza para repetir os sinais MIDI.
+        </p>
+        <img src="imagens/Vs3.png" alt="imagem de comandos">
+        <p class="espaco-reduzido">
+            Caso precise de uma porta extra para conectar seu Kontakt ou DAW, baixe o programa loopMIDI no link abaixo:
+        </p>
+        <a href="https://www.tobias-erichsen.de/software/loopmidi.html" class="my-link2">Download loopMIDI</a>
+        <p class="espaco-reduzido">
+            Disponível apenas para Windows. No macOS não é necessário, e em breve não será mais para Windows (hoje: 27/06/2025).
+        </p>
+        <p class="espaco-reduzido">
+            Para configurar sua porta, selecione Configure loopMIDI/Setup, insira em "New port-name": <b>VisualMusic MIDI Hub</b> e clique em "+" para criar a porta, que será usada no Kontakt ou DAW, conforme destacado na imagem abaixo.
+        </p>
+        <img src="imagens/Vs4.png" alt="imagem de comandos">
+        </br>
+        <a href="TocaSample.html" class="my-link2">Link para meu outro programa, Toca Sample</a>
+    </div>
+</body>
+</html>
