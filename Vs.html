@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="pt-br">
 
     <head>
@@ -66,17 +66,20 @@
             
 
         <div id="txt">
-        <h1>Visual VisualStudio</h1>
-
-        <img src="imagens/VS.png" alt="imagem de comandos">
+        <h1>Visual VisualStudio</h1><br>
         <h2 style="text-align: center;">
-            Por lazer, criei um interpretador de acordes MIDI e visualizador de imagens, formato em que salvo minhas músicas cifradas!
-        </h2>
+            VisualStudio interpreta acordes MIDI e exibe imagens nos formatos png, bmp, jpeg ou jpg. Dessa forma, salvo minhas músicas cifradas apenas capturando a tela nesses formatos.
+        </h2>    
+        <img src="imagens/VS.png" alt="imagem de comandos">
+        
         <p class="espaco-reduzido">
             Desenvolvi uma versão legada para Windows usando Windows Forms, mas como o sistema executa muitos processos junto com o Kontakt, resolvi criar também para macOS com Avalonia. O resultado ficou tão bom que refiz a versão para Windows, desta vez usando WPF (imagem acima).
         </p>
         <p class="espaco-reduzido">
-            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando em Hold Notes, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
+            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando em Limit Inversions, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
+        </p>
+          <p class="espaco-reduzido">
+            Clicando / selecionando "Hold Notes" a cifra permanecera na tela por mais uns cinco segundos ou até que um novo acorde seja identificado, o pedal do teclado também segura o acorde na tela.
         </p>
         <p class="espaco-reduzido">
             Em destaque, a cifra é interpretada conforme tocamos no teclado via MIDI. O VisualStudio reconhece mais de 3.500 acordes, inclusive invertidos, também exibindo abaixo a composição de cada acorde, de acordo com as notas tocadas.
