@@ -62,21 +62,31 @@
         <script src="script.js"></script>
         
             
-           
+        
             
 
         <div id="txt">
         <h1>Visual VisualStudio</h1><br>
         <h2 style="text-align: center;">
             VisualStudio interpreta acordes MIDI e exibe imagens nos formatos png, bmp, jpeg ou jpg. Dessa forma, salvo minhas músicas cifradas apenas capturando a tela nesses formatos.
-        </h2>    
-        <img src="imagens/VS.png" alt="imagem de comandos">
+        </h2>  
+        <p class="espaco-reduzido">
+           A baixo, tela da versão para macOS (sem imagem da cifra que pode ser carregada e no modo sobre).
+        </p>
+        <img src="imagens/VSmac.png" alt="imagem macOS"> 
+
+         <br>
+         <p class="espaco-reduzido">
+           A baixo, tela da versão para Windows(com imagem de cifras carregada e no modo split, que mostra intervalos e candidato a acorde).
+        </p>
+        <img src="imagens/VS.png" alt="imagem Windows">
+        
         
         <p class="espaco-reduzido">
             Desenvolvi uma versão legada para Windows usando Windows Forms, mas como o sistema executa muitos processos junto com o Kontakt, resolvi criar também para macOS com Avalonia. O resultado ficou tão bom que refiz a versão para Windows, desta vez usando WPF (imagem acima).
         </p>
         <p class="espaco-reduzido">
-            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando em Limit Inversions, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
+            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando / selecionando Limit Inversions, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
         </p>
           <p class="espaco-reduzido">
             Clicando / selecionando "Hold Notes" a cifra permanecera na tela por mais uns cinco segundos ou até que um novo acorde seja identificado, o pedal do teclado também segura o acorde na tela.
@@ -88,7 +98,7 @@
             À direita, aparece um possível candidato a acorde, ou uma segunda interpretação do programa. Pode ser o mesmo acorde com nome diferente ou algo próximo, mas nem sempre correto — o que vale é o primeiro. Por exemplo, pode mostrar Am7/C e ao lado C6, pois as notas são praticamente as mesmas.
         </p>
         <p class="espaco-reduzido">
-            Você pode abrir uma imagem e clicar em "Acorde Sobre". O acorde (apenas ele) ficará do tamanho, cor e transparência que você definir, sobre a imagem, como mostrado abaixo.
+            Ao clicar / selecionar "Acorde Sobre". O acorde (apenas ele, sem intervalos e candidato a acorde) ficará do tamanho, cor e transparência que você definir, sobre a imagem / cifra carregada, como na tela abaixo ou sem imagem como na primeira tela a cima do macOS.
         </p>
         <img src="imagens/Vs2.png" alt="imagem de comandos">
         <p class="espaco-reduzido">
@@ -106,10 +116,10 @@
         </p>
         <a href="https://www.tobias-erichsen.de/software/loopmidi.html" class="my-link2">Download loopMIDI</a>
         <p class="espaco-reduzido">
-            Disponível apenas para Windows. No macOS não é necessário, e em breve não será mais para Windows (hoje: 27/06/2025).
+            Disponível apenas para Windows. No macOS não é necessário, e em breve não será mais para Windows (hoje:27/06/2025 ainda é necessário).
         </p>
         <p class="espaco-reduzido">
-            Para configurar sua porta, selecione Configure loopMIDI/Setup, insira em "New port-name": <b>VisualMusic MIDI Hub</b> e clique em "+" para criar a porta, que será usada no Kontakt ou DAW, conforme destacado na imagem abaixo.
+            Para configurar sua porta, selecione: Configure loopMIDI/Setup, insira em "New port-name": <b>VisualMusic MIDI Hub</b> e clique em "+" para criar a porta, que será usada no Kontakt ou DAW, conforme destacado na imagem abaixo.
         </p>
         <img src="imagens/Vs4.png" alt="imagem de comandos">
         </br>
