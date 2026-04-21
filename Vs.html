@@ -8,19 +8,18 @@
     <link rel="shortcut icon" href="pno3_128.png" type="image/x-icon">
     <link rel="stylesheet" href="menhz.css">
     <style>
-        /* Ajustes de Layout e Largura Reflexiva */
+        /* Sincronização com seu CSS original e largura reflexiva */
         #txt {
             background-color: hsla(201, 44%, 81%, 0.74); 
             border-radius: 10px;
             box-shadow: 10px 10px 15px rgba(14, 29, 97, 0.767);
             width: 95%;            
-            max-width: 1400px;      /* Largura original restabelecida */
+            max-width: 1400px;      
             padding: 3%;
             margin: 2% auto;
             display: block;
         }
 
-        /* Banner de Destaque */
         .hero-banner {
             background: linear-gradient(135deg, #012302 0%, #051a05 100%);
             color: #ffffff;
@@ -31,12 +30,11 @@
             text-align: center;
         }
 
-        .hero-banner h1 { color: #8cff66; text-shadow: none; margin-bottom: 10px; }
+        .hero-banner h1 { color: #8cff66; text-shadow: none; margin-bottom: 0; }
 
-        /* Grid de Inteligência Musical */
         .grid-recursos {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin: 30px 0;
         }
@@ -50,9 +48,8 @@
             text-align: left;
         }
 
-        .card-recurso h3 { margin-top: 0; color: #0602f7; }
+        .card-recurso h3 { margin-top: 0; color: #0602f7; font-size: 1.2em; }
 
-        /* Imagens */
         .img-doc {
             width: 100%;
             max-width: 100%;
@@ -62,7 +59,6 @@
             margin: 20px 0;
         }
 
-        /* VS5 (Tamanho Natural) */
         .img-natural {
             width: auto;
             max-width: 100%;
@@ -74,11 +70,12 @@
         .download-breve {
             display: inline-block;
             padding: 12px 25px;
-            background: #040f70;
-            color: white;
+            background: #222; 
+            color: #8cff66;
             border-radius: 5px;
             margin: 10px;
             font-weight: bold;
+            border: 1px dashed #444;
         }
 
         .depoimento {
@@ -93,12 +90,11 @@
 
         .highlight { color: #0602f7; font-weight: bold; }
         h2 { color: #040f70; text-align: center; margin-top: 40px; }
-        h3 { font-size: 1.2em; }
     </style>
 </head>
 
 <body>
-    <!-- MENU ORIGINAL RESTABELECIDO -->
+    <!-- MENU ORIGINAL -->
     <nav class="dp-menu">
         <ul>
             <li><a href="#">Rascunho</a>
@@ -115,7 +111,7 @@
                     <li><a href="index.html" class="my-link">Pagina Inicial</a></li>
                     <li><a href="Sobre_Autor.html" class="my-link">Um Pouco Sobre o Autor</a></li>
                     <li><a href="mailto:rycobuckton@gmail.com">rycobuckton@gmail.com (Meu Pix)</a></li>
-                    <li><a href="#">21 986995549 &#8678 Só Zap <img src="midia/favicon.png" alt="" style="width:20px; vertical-align:middle; margin:0;"></a></li>
+                    <li><a href="#">21 986995549 &#8678 Só Zap <img src="midia/favicon.png" alt="" style="width:20px; vertical-align:middle;"></a></li>
                     <li><a href="Curriculum.html" class="my-link">Meu curriculum</a></li>
                     <li><a href="TocaSample.html" class="my-link">Toca TocaSample (em construção)</a></li>
                 </ul>
@@ -126,14 +122,11 @@
     <script src="script.js"></script>
 
     <div id="txt">
-        <!-- Propaganda e Destaque -->
         <div class="hero-banner">
-            <!-- O estilo flex garante que fiquem na mesma linha e alinhados -->
             <div style="display: flex; align-items: baseline; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                <h1 style="margin-bottom: 0;">Acorde Visual Midi </h1>
-                <h3 style="font-size: 1.2rem; color: #8cff66; opacity: 0.8; font-weight: normal; margin: 0;"> (Lançamento em Breve)</h3>
+                <h1>Acorde Visual Midi</h1>
+                <h3 style="font-size: 1.2rem; color: #8cff66; opacity: 0.8; font-weight: normal; margin: 0;">(Lançamento em Breve)</h3>
             </div>
-
             <p style="font-size: 1.2em; text-align: center; margin-top: 20px;">
                 <strong>Inteligência Real para Casa, Palco e Estudo.</strong>
             </p>
@@ -152,14 +145,18 @@
             </div>
             <div class="card-recurso">
                 <h3>Contexto Dinâmico</h3>
-                <p>Diferencia nuances teóricas como a <strong>5#</strong> e a <strong>13b</strong> dependendo da estrutura harmônica presente.</p>
+                <p>Diferencia nuances teóricas como a <strong>5#</strong> (alteração de base) e a <strong>13b</strong> (extensão) dependendo da estrutura harmônica presente.</p>
+            </div>
+            <div class="card-recurso">
+                <h3>Nomenclatura Inteligente</h3>
+                <p>Facilita o aprendizado exibindo estruturas claras como <strong>Cm7(9)</strong> e aplica filtros de hierarquia em acordes complexos, ocultando notas redundantes (ex: <strong>C13</strong>) mas mantendo avisos de conflito (ex: <strong>C13(11)</strong>).</p>
             </div>
         </div>
 
         <p>Abaixo, tela da versão para <strong>macOS (Intel)</strong> operando no modo "Acorde Sobre", com interface limpa e foco total na identificação rápida.</p>
         <img src="imagens/VSmac.png" alt="Interface macOS" class="img-doc">
 
-        <p>Abaixo, tela da versão para <strong>Windows 11 (Versão igual ou superior a 24H2)</strong> com imagem de cifras carregada e no modo <strong>Split</strong>, que mostra detalhadamente os intervalos e candidatos a acorde.</p>
+        <p>Abaixo, tela da versão para <strong>Windows 11 (24H2 ou superior)</strong> com imagem de cifras carregada e no modo <strong>Split</strong>, que mostra detalhadamente os intervalos e candidatos a acorde.</p>
         <img src="imagens/VS.png" alt="Interface Windows" class="img-doc">
 
         <div class="depoimento">
@@ -174,44 +171,41 @@
         <img src="imagens/Vs2.png" alt="Modo Overlay" class="img-doc">
 
         <p>
-            Note que os controles somem após alguns segundos de inatividade, limpando o palco para a sua música. O recurso <strong>Hold Notes</strong> segura o acorde na tela para sua análise.
+            Note que os controles somem após alguns segundos de inatividade, limpando o palco para a sua música. O recurso <strong>Hold Notes</strong> segura o acorde na tela para sua análise detalhada.
         </p>
 
-        <!-- VS5 (Tamanho Natural) -->
         <img src="imagens/Vs5.png" alt="Configurações MIDI" class="img-natural">
 
         <p>
-            Caso não consiga carregar seu dispositivo Midi verifique se sua versão do Windows 11 é igual ou superior a <strong>versão do Windows 11 é igual ou superior a (24H2)</strong>,a partir desta o Windows suporta que o mesmo Device (teclado Midi) seja acessado por mais de um aplicativo MIDI facilitando a conexão com Kontakt, DAWs e outros instrumentos virtuais simultaneamente.
+            Certifique-se de carregar seu dispositivo MIDI corretamente. Para usuários de Windows 11 (versão 24H2 ou superior), o sistema suporta acesso compartilhado ao teclado MIDI por múltiplos aplicativos, facilitando a conexão com Kontakt e DAWs simultaneamente.
         </p>
-        <!-- SEÇÃO: GRATUITO, PIX E SEGURANÇA -->
-        <div style="background-color: #323a33; color: #ffffff; padding: 25px; border-radius: 10px; margin: 30px 0; text-align: justify; border: 1px solid #444;">
-            <p style="text-indent: 0px; text-align: center;">
+
+        <!-- SEÇÃO: GRATUITO, PIX E SEGURANÇA (Fundo Preto, Letras Claras) -->
+        <div style="background-color: #000000; color: #ffffff; padding: 30px; border-radius: 12px; margin: 30px 0; text-align: justify; border: 1px solid #444; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="text-align: center; font-size: 1.1em; text-indent: 0;">
                 <strong>O Acorde Visual Midi é GRATUITO e Open Source.</strong>
             </p>
             
-            <p style="text-indent: 0px; text-align: center; color: #8cff66; font-size: 1.1em;">
+            <p style="text-align: center; color: #8cff66; font-size: 1.2em; margin: 15px 0; text-indent: 0;">
                 Apoie o projeto via Pix: <strong>rycobuckton@gmail.com</strong>
             </p>
             
-            <p style="text-indent: 0px; text-align: center;"> Acredito na democratização do ensino musical.</p>
+            <p style="text-align: center; opacity: 0.8; text-indent: 0;">Acredito na democratização do ensino musical e da tecnologia.</p>
 
-            <p style="text-indent: 30px; font-size: 0.95em; color: #dddddd; margin-top: 20px;">
-                O programa está disponível no <strong>GitHub</strong> para verificações, inclusive de vírus. Por ser um software novo e independente, sem as assinaturas digitais pagas exigidas pela Microsoft ou Apple, os sistemas operacionais podem gerar <strong>falsos alertas</strong> de segurança. O código é aberto para total transparência e pode ser auditado por qualquer usuário. "Software em desenvolvimento ativo. O sistema já identifica uma gama expressiva de acordes e extensões, tendo sido testado com milhares de combinações porem não posso garantir reconhecimento total dos acordes existentes."
-
+            <p style="font-size: 0.95em; color: #cccccc; margin-top: 25px; line-height: 1.6; text-indent: 30px;">
+                O programa está disponível no <strong>GitHub</strong> para verificações, inclusive de vírus. Por ser um software independente e sem assinaturas digitais pagas (Microsoft/Apple), os sistemas operacionais podem gerar <strong>falsos alertas</strong> de segurança. O projeto está em desenvolvimento ativo e, embora testado com milhares de combinações, segue em constante evolução para mapear a complexidade da harmonia musical. Não posso garantir reconhecimento total dos acordes existentes, mas o sistema já identifica uma gama expressiva de extensões.
             </p>
-            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
-                <span class="download-breve">
-                    <span class="seta-dl">⬇️</span> 🖥️ Windows: Em Breve
-                </span>
-                <span class="download-breve">
-                    <span class="seta-dl">⬇️</span> 🍎 macOS (Intel): Em Breve
-                </span>
+            
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                <span class="download-breve">⬇️ 🖥️ Windows: Em Breve</span>
+                <span class="download-breve">⬇️ 🍎 macOS: Em Breve</span>
             </div>
         </div>
+
         <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1);">
             <p><a href="https://github.com/rycobuckton" target="_blank" class="my-link2">🔗 Siga o projeto no GitHub</a></p>
             <br>
-            <h2><a href="Curriculum.html" class="my-link2">Meu curriculum</a></h2>
+            <h2><a href="Sobre_Autor.html" class="my-link2">Sobre o Autor</a></h2>
             <h2><a href="TocaSample.html" class="my-link2">Toca TocaSample (em construção)</a></h2>
         </div>
     </div>
