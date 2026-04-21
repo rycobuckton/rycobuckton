@@ -8,7 +8,8 @@
     <link rel="shortcuts icon" href="Paomedia-Small-N-Flat-Star.ico" type="image/x-icon">
     <link rel="stylesheet" href="curri.css">
 </head>
-<bod>       
+
+<body>       
        <main>
            <div>
                <script>
@@ -26,7 +27,8 @@
            <h2>Téc Eletrônico, Informática, Rede, Fibra Óptica,<br> 
             Téc. Instrumentação com enfase no Controle Qualidade.</h2>
 
-            <h4>Autodidata, 60 anos, com vasta experiência técnica na area de tecnologia, <br> atualmente <b>estudando C# e KSP (Kontakt).</b></h4> 
+            <h4>Autodidata, <span id="idade"></span> anos, com vasta experiência técnica na área de tecnologia, <br> 
+            atualmente <b>estudando C# e KSP (Kontakt).</b></h4>
             
             <h2>EXPERIÊNCIA PROFISSIONAL: </h2>
            
@@ -82,5 +84,25 @@
 
            
        </main> 
+    <script>
+        function calcularIdade(nascimento) {
+            const hoje = new Date();
+            const dataNascimento = new Date(nascimento);
+            let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+            const mes = hoje.getMonth() - dataNascimento.getMonth();
+
+            // Ajusta se ainda não fez aniversário no ano corrente
+            if (mes < 8 || (mes === 8 && hoje.getDate() < dataNascimento.getDate())) {
+                idade--;
+            }
+            return idade;
+        }
+
+        // Define sua data: Ano, Mês (0-11), Dia
+        // Setembro é o mês 8 no JavaScript (Janeiro é 0)
+        const minhaIdade = calcularIdade('1964-09-29');
     
-</bod
+        // Insere o valor no local correto
+        document.getElementById('idade').textContent = minhaIdade;
+    </script>
+</body
