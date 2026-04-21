@@ -1,122 +1,193 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+<html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acorde Visual Midi</title>
-        <link rel="shortcut icon" href="pno3_128.png" type="image/x-icon">
-        <link rel="stylesheet" href="menhz.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acorde Visual Midi</title>
+    <link rel="shortcut icon" href="pno3_128.png" type="image/x-icon">
+    <link rel="stylesheet" href="menhz.css">
+    <style>
+        /* Ajustes de Layout e Largura Reflexiva */
+        #txt {
+            background-color: hsla(201, 44%, 81%, 0.74); 
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(14, 29, 97, 0.767);
+            width: 95%;            
+            max-width: 1400px;      /* Largura original restabelecida */
+            padding: 3%;
+            margin: 2% auto;
+            display: block;
+        }
 
-    <body>
-        <nav class="dp-menu">
-            <ul>
-                <li><a href="#">Rascunho</a>
-                    <ul>
-                        <li class="empty-item"><a href="#">&nbsp;</a></li> <!-- Item vazio para criar espaço-->
-                        <li><a href="index.html" class="my-link">Pagina Inicial</a></li>
-                        <li><a href="indexc.html" class="my-link">Inserindo Estilo Esterno CSS</a></li>
-                        <li><a href="index_ font_ in_css.html" class="my-link">Fontes com CSS</a></li>
-                        <li><a href="aula_17.html" class="my-link">Alinhamento de Textos</a></li>
-                        <li><a href="indexseletor.html" class="my-link">Seletores Personalizados</a></li>
-                        <li><a href="indexb.html" class="my-link">Estilos Inline</a></li>
-                        <li><a href="css_aula_14.html" class="my-link">Estilos Locais / Internos</a></li>
-                        <li><a href="cor2.html" class="my-link">Gradiente com CSS </a></li>
-                        <li><a href="cor3.html" class="my-link"> Site de Exemplo</a></li>
-                        <li><a href="ag-viagens.html" class="my-link">EX. Agencia de Viagens</a></li>
-                        <li><a href="formularios.html" class="my-link">Formulário teste</a></li>
-                        <li><a href="pseudoclasses.html" class="my-link">Pseudo class</a></li>
-                        <li><a href="tabela.html" class="my-link">Tabela</a></li>
-                        <li><a href="hover.html" class="my-link">Exemplo de hover</a></li>
-                        <li><a href="index2.html" class="my-link">Primeiro rascunho (Index Antigo)</a></li>
+        /* Banner de Destaque */
+        .hero-banner {
+            background: linear-gradient(135deg, #012302 0%, #051a05 100%);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #8cff66;
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
-                    </ul>
-                </li>
-                <li><a href="#">Sobre Autor</a>
-                    <ul>
-                        <li class="empty-item"><a href="#">&nbsp;</a></li> <!-- Item vazio para criar espaço-->
-                        <li><a href="index.html" class="my-link">Pagina Inicial</a></li>
-                        <li><a href="Sobre_Autor.html" class="my-link">Um Pouco Sobre o Autor</a></li>
-                        <li><a href="mailto:rycobuckton@gmail.com">rycobuckton@gmail.com (Meu Pix)</a></li>
-                        <li><a href="#">21 986995549 &#8678  Só Zap <img src="midia/favicon.png" alt=""></a></li>
-                        <li><a href="Curriculum.html" class="my-link">Meu curriculum</a></li>
-                        <li><a href="TocaSample.html" class="my-link">Toca TocaSample (em construção)</a></li>
-                        
-                    </ul>
-                </li>
-                <li><a href="#">&#x1F609;HOLD</a>
-                    <ul>
-                        <li class="empty-item"><a href="#">&nbsp;</a></li> <!-- Item vazio para criar espaço-->
-                        <li><a href="index.html">&#x1F648; Sem resposta</a></li>
-                        <li><a href="#">&#x1f913; Sem resposta</a></li>
-                        <li><a href="#">&#x1f915; Sem resposta</a></li>
-                        <li><a href="#series">&#x1F923; Sem resposta</a></li>
-                        <li><a href="#">&#x1F447; Sem resposta</a></li>
+        .hero-banner h1 { color: #8cff66; text-shadow: none; margin-bottom: 10px; }
 
-                    </ul>
+        /* Grid de Inteligência Musical */
+        .grid-recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
 
+        .card-recurso {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border-radius: 8px;
+            border-bottom: 3px solid #040f70;
+            color: #040f70;
+            text-align: left;
+        }
 
-            </ul>
-        </nav>
-        <script src="script.js"></script>
-        
-            
-        
-            
+        .card-recurso h3 { margin-top: 0; color: #0602f7; }
 
-        <div id="txt">
-        <h1>Acorde Visual Midi</h1><br>
-        <h2 style="text-align: center;">
-            Acorde Visual Midi interpreta acordes MIDI e exibe imagens nos formatos png, bmp, jpeg ou jpg. Dessa forma, salvo minhas músicas cifradas apenas capturando a tela nesses formatos.
-        </h2>  
-        <p class="espaco-reduzido">
-           A baixo, tela da versão para macOS (sem imagem da cifra que pode ser carregada e no modo sobre).
-        </p>
-        <img src="imagens/VSmac.png" alt="imagem macOS"> 
+        /* Imagens */
+        .img-doc {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #040f70;
+            margin: 20px 0;
+        }
 
-         <br>
-         <p class="espaco-reduzido">
-           A baixo, tela da versão para Windows(com imagem de cifras carregada e no modo split, que mostra intervalos e candidato a acorde).
+        /* VS3 (Tamanho Natural) */
+        .img-natural {
+            width: auto;
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .download-breve {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #040f70;
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .depoimento {
+            background: rgba(4, 15, 112, 0.05);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #0602f7;
+            font-style: italic;
+            margin: 40px 0;
+            text-align: justify;
+        }
+
+        .highlight { color: #0602f7; font-weight: bold; }
+        h2 { color: #040f70; text-align: center; margin-top: 40px; }
+        h3 { font-size: 1.2em; }
+    </style>
+</head>
+
+<body>
+    <!-- MENU ORIGINAL RESTABELECIDO -->
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="#">Rascunho</a>
+                <ul>
+                    <li class="empty-item"><a href="#">&nbsp;</a></li>
+                    <li><a href="index.html" class="my-link">Pagina Inicial</a></li>
+                    <li><a href="indexc.html" class="my-link">Inserindo Estilo Esterno CSS</a></li>
+                    <li><a href="index2.html" class="my-link">Primeiro rascunho (Index Antigo)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sobre Autor</a>
+                <ul>
+                    <li class="empty-item"><a href="#">&nbsp;</a></li>
+                    <li><a href="index.html" class="my-link">Pagina Inicial</a></li>
+                    <li><a href="Sobre_Autor.html" class="my-link">Um Pouco Sobre o Autor</a></li>
+                    <li><a href="mailto:rycobuckton@gmail.com">rycobuckton@gmail.com (Meu Pix)</a></li>
+                    <li><a href="#">21 986995549 &#8678 Só Zap <img src="midia/favicon.png" alt="" style="width:20px; vertical-align:middle; margin:0;"></a></li>
+                    <li><a href="Curriculum.html" class="my-link">Meu curriculum</a></li>
+                    <li><a href="TocaSample.html" class="my-link">Toca TocaSample (em construção)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">&#x1F609;HOLD</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+
+    <div id="txt">
+        <!-- Propaganda e Destaque -->
+        <div class="hero-banner">
+            <h1>Acorde Visual Midi</h1>
+            <p style="font-size: 1.2em;"><strong>Inteligência Real para Casa, Palco e Estudo.</strong></p>
+            <p>Interpreta sinais MIDI em tempo real através de um motor de regras avançado que entende a intenção do músico, oferecendo uma análise precisa e didática.</p>
+            <div style="margin-top: 15px;">
+                <span class="download-breve">🖥️ Windows: Em Breve</span>
+                <span class="download-breve">🍎 macOS: Em Breve</span>
+            </div>
+        </div>
+
+        <h2>🧠 Por que ele é mais inteligente?</h2>
+        <div class="grid-recursos">
+            <div class="card-recurso">
+                <h3>Filtro de Baixo Real</h3>
+                <p>O software identifica oitavas dobradas no grave e separa a região do baixo do corpo do acorde. Resultado: cifras limpas como <strong>C/Bb</strong> mesmo com o baixo dobrado.</p>
+            </div>
+            <div class="card-recurso">
+                <h3>Análise de Conflitos</h3>
+                <p>Percebe choques entre notas (como 3ª e 4ª justa) e prioriza automaticamente as interpretações de acordes mais estáveis e musicais.</p>
+            </div>
+            <div class="card-recurso">
+                <h3>Contexto Dinâmico</h3>
+                <p>Diferencia nuances teóricas como a <strong>5#</strong> e a <strong>13b</strong> dependendo da estrutura harmônica presente.</p>
+            </div>
+        </div>
+
+        <p>Abaixo, tela da versão para <strong>macOS</strong> operando no modo "Acorde Sobre", com interface limpa e foco total na identificação rápida.</p>
+        <img src="imagens/VSmac.png" alt="Interface macOS" class="img-doc">
+
+        <p>Abaixo, tela da versão para <strong>Windows</strong> com imagem de cifras carregada e no modo <strong>Split</strong>, que mostra detalhadamente os intervalos e candidatos a acorde.</p>
+        <img src="imagens/VS.png" alt="Interface Windows" class="img-doc">
+
+        <div class="depoimento">
+            <strong>🎯 Refine sua Técnica:</strong><br>
+            "O Acorde Visual Midi funciona como um espelho da sua execução. Muitas vezes tocamos no automático e não percebemos imprecisões na montagem. O programa permite confirmar se a sua posição no teclado corresponde ao acorde pretendido. Eu mesmo descobri vícios que não percebia, e hoje uso para expandir meu vocabulário harmônico."
+        </div>
+
+        <h2>🖼️ O Diferencial: Modo "Acorde Sobre" (Overlay)</h2>
+        <p>
+            Ao selecionar <strong>Acorde Sobre</strong>, o nome do acorde aparecerá no tamanho, cor e transparência que você definir, <strong>projetado diretamente sobre a sua imagem ou cifra carregada</strong>. Isso permite ler a música e monitorar o MIDI simultaneamente.
         </p>
-        <img src="imagens/VS.png" alt="imagem Windows">
-        
-        
-        <p class="espaco-reduzido">
-            Desenvolvi uma versão legada para Windows usando Windows Forms, mas como o sistema executa muitos processos junto com o Kontakt, resolvi criar também para macOS com Avalonia. O resultado ficou tão bom que refiz a versão para Windows, desta vez usando WPF (imagem acima).
+        <img src="imagens/Vs2.png" alt="Modo Overlay" class="img-doc">
+
+        <p>
+            Note que os controles somem após alguns segundos de inatividade, limpando o palco para a sua música. O recurso <strong>Hold Notes</strong> segura o acorde na tela para sua análise.
         </p>
-        <p class="espaco-reduzido">
-            É possível personalizar a cor e a transparência dos textos, posicionando-os sobre a imagem sem prejudicar a leitura. Clicando / selecionando Limit Inversions, somente as tríades não serão exibidas invertidas , recurso interessante para Estudantes de música, pois a cifra é mostrada como um acorde normal, sem inversões.
+
+        <!-- VS3 (Tamanho Natural) -->
+        <img src="imagens/Vs3.png" alt="Configurações MIDI" class="img-natural">
+
+        <p>
+            Compatível com dispositivos MIDI padrão e preparado para o recurso de <strong>loop MIDI nativo do Windows (24H2)</strong>, facilitando a conexão com Kontakt, DAWs e outros instrumentos virtuais.
         </p>
-          <p class="espaco-reduzido">
-            Clicando / selecionando "Hold Notes" a cifra permanecera na tela por mais uns cinco segundos ou até que um novo acorde seja identificado, o pedal do teclado também segura o acorde na tela.
-        </p>
-        <p class="espaco-reduzido">
-            Em destaque, a cifra é interpretada conforme tocamos no teclado via MIDI. O Acorde Visual Midi reconhece mais de 3.500 acordes, inclusive invertidos, também exibindo abaixo a composição de cada acorde, de acordo com as notas tocadas.
-        </p>
-        <p class="espaco-reduzido">
-            À direita, aparece um possível candidato a acorde, ou uma segunda interpretação do programa. Pode ser o mesmo acorde com nome diferente ou algo próximo, mas nem sempre correto — o que vale é o primeiro. Por exemplo, pode mostrar Am7/C e ao lado C6, pois as notas são praticamente as mesmas.
-        </p>
-        <p class="espaco-reduzido">
-            Ao clicar / selecionar "Acorde Sobre". O acorde (apenas ele, sem intervalos e candidato a acorde) ficará do tamanho, cor e transparência que você definir, sobre a imagem / cifra carregada, como na tela abaixo ou sem imagem como na primeira tela a cima do macOS.
-        </p>
-        <img src="imagens/Vs2.png" alt="imagem de comandos">
-        <p class="espaco-reduzido">
-            Note que já alterei a cor de fundo e do acorde. Os controles somem após alguns segundos sem movimentar o mouse, deixando a tela exclusiva para a imagem e o acorde. Basta mover o mouse para que os controles reapareçam.
-        </p>
-        <p class="espaco-reduzido">
-            Com um arquivo de imagens carregado, basta pressionar as setas do teclado para navegar entre as imagens. À direita de "Chord A-" está o título da música (arquivo aberto). Clicando na seta do teclado, você pode selecionar para frente ou para traz, outras músicas (imagens do diretório).
-        </p>
-        <p class="espaco-reduzido">
-            A imagem abaixo mostra meu dispositivo MIDI em MID IN (meu teclado CASSIO USB-MIDI), previamente selecionado para receber os acordes via cabo MIDI.
-        </p>
-        <img src="imagens/Vs3.png" alt="imagem de comandos">
-        <p class="espaco-reduzido">
-            Caso tenha problema para configurar uma porta (Device) extra para conectar seu Kontakt ou DAW, sertifique-se que seu Windows seja version 24H2. A partir dessa versão, o Windows passou a ter um recurso nativo de loop MIDI, ou seja, criar portas MIDI virtuais sem precisar de programas de terceiros. 
-        </p>
-                       
-         <h2><a href="Curriculum.html" class="my-link">Meu curriculum</a></h2><br>
-        <h2><a href="TocaSample.html" class="my-link">Toca TocaSample (em construção)</a></h2><br>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1);">
+            <p><a href="https://github.com/rycobuckton" target="_blank" class="my-link2">🔗 Siga o projeto no GitHub</a></p>
+            <br>
+            <h2><a href="Curriculum.html" class="my-link2">Meu curriculum</a></h2>
+            <h2><a href="TocaSample.html" class="my-link2">Toca TocaSample (em construção)</a></h2>
+        </div>
     </div>
 </body>
+
 </html>
